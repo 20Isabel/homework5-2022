@@ -1,0 +1,9 @@
+#logo{
+    width:425px;
+    animation: hw5_move 5s;
+}
+
+@keyframes hw5_move{
+    from{width:25px;}
+    to{width:425px;}
+}
