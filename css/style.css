@@ -101,17 +101,28 @@ body > header{
 
 }
 
-/* @media print{
-    .body{
+@media print{
+    
+    body{
         font-family: Arial, Helvetica;
         background-image: none;
 
     }
-    .nav, .nav_links{
-        align
+    .nav_links{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+    nav{
+        width: 100%;
     }
     
     .pricing{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items:flex-end;
+
 
     }
 
@@ -120,8 +131,12 @@ body > header{
         flex-basis: 325px;
     }
 
-    .gallery{
-        visibility:hidden;
+    .gallery, #gallery{
+        display:none;
     }
 
-} */
+    .card ul li:nth-child(2)::after{
+        content:"\1F44D"
+    }
+
+}
